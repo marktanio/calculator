@@ -1,15 +1,6 @@
 
-//display input (main Display)
 
-function displayInput(value){
-    
-}
-
-
-
-//display numbers in secondary screen
-//compute
-//clear recent input
-//clear everything
-
-
+const appendToDisplay = (value) => {
+    const mainDisplay = document.getElementById('mainDisplay');
+    mainDisplay.value += value;
+  };

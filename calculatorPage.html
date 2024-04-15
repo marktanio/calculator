@@ -10,30 +10,29 @@
     <div class="container">
         <div class="outerbox glass">
             <div class="calculator glass">
-                <div class="secondaryDisplay" id="secDisplay"> </div>
                 <div class="mainDisplay" id="mainDisplay">0</div>
                 <hr>
                 <div class="buttons">
-                    <button onclick="">AC</button>
-                    <button onclick="">Del</button>
-                    <button onclick="">%</button>
-                    <button onclick="">÷</button>
-                    <button onclick="">7</button>
-                    <button onclick="">8</button>
-                    <button onclick="">9</button>
-                    <button onclick="">x</button>
-                    <button onclick="">4</button>
-                    <button onclick="">5</button>
-                    <button onclick="">6</button>
-                    <button onclick="">-</button>
-                    <button onclick="">1</button>
-                    <button onclick="">2</button>
-                    <button onclick="">3</button>
-                    <button onclick="">+</button>
-                    <button onclick="">0</button>
-                    <button onclick="">00</button>
-                    <button onclick="">.</button>
-                    <button onclick="">=</button>
+                    <button onclick="clearAll()">AC</button>
+                    <button onclick="deleteDigit()">Del</button>
+                    <button onclick="appendToDisplay('%')">%</button>
+                    <button onclick="appendToDisplay('/')">÷</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('*')">x</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()">=</button>
                 </div>
             </div>
         </div>
