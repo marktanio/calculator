@@ -6,7 +6,7 @@ function appendToDisplay(value) {
 }
 
 function clearDisplay() {
-    displayValue = '';
+    displayValue = '0';
     updateDisplay();
 }
 
@@ -23,4 +23,18 @@ function calculate() {
 
 function updateDisplay() {
     document.getElementById('mainDisplay').innerText = displayValue;
+}
+
+function deleteLastDigit() {
+    // Get the current value from the input field
+    var currentValue = document.getElementById('mainDisplay').value;
+    
+    // Check if the current value is not empty
+    if (currentValue.length > 0) {
+        // Remove the last character
+        var newValue = currentValue.slice(0, -1);
+        
+        // Update the input field with the new value
+        document.getElementById('mainDisplay').value = newValue;
+    }
 }
